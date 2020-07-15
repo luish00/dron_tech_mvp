@@ -79,6 +79,53 @@ p {
   width: 50px;
 }
 
+.carousel-text-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-text-container div:first-child {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.carousel-text-container div:first-child p {
+  text-align: center;
+}
+
+.carousel .indicators .indicator-item.active {
+background-color: #00796b !important;
+}
+
+.carousel .indicators .indicator-item {
+  background-color: rgba(52, 123, 66, 0.4) !important;
+}
+
+.carousel-left-move {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  width: 150px;
+  z-index: 1;
+}
+
+.carousel-right-move {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  width: 150px;
+  z-index: 1;
+}
+
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
