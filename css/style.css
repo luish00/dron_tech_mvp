@@ -1,0 +1,107 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+h1, h3 {
+  font-family: serif;
+}
+
+.brand-logo {
+  margin-top: 8px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.container-sub-title {
+  align-items: center;
+  display: flex;
+  min-height: 300px;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  color: rgba(255,255,255,.9);
+  height: auto;
+  line-height: 0;
+  min-height: 580px;
+}
+
+.parallax-container-bottom {
+  flex: 1;
+  display: flex;
+  height: 580px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.parallax-container-bottom div:first-child {
+  /* height: 200px; */
+  align-items: center;
+  background-color: rgba(52, 123, 66, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+}
+
+
+.parallax-container-bottom div:first-child p {
+  text-align: center;
+  width: 70%;
+}
+
+.parallax-container-bottom div:first-child h3 {
+  font-size: 25px;
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.image-separator {
+  height: 50px;
+  margin-top: 20px;
+  width: 50px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
