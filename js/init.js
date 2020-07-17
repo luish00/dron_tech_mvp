@@ -1,31 +1,28 @@
-(function($){
-  $(function(){
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+  $('.parallax').parallax();
 
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
+  $('.carousel.carousel-slider').carousel({
+    dist: 0,
+    padding: 0,
+    fullWidth: true,
+    indicators: true,
+    duration: 100,
+  });
 
-    $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: true,
-      noWrap: true,
-    });
 
-    // hotfix
-    document.getElementsByClassName("carousel")[0].removeAttribute('style');
-    const elem =  $('.carousel.carousel-slider');
-    const instance = M.Carousel.getInstance(elem);
+  $('#carousel-arrow-left').on('click', function () {
+    $('.carousel').carousel('prev');
+  });
 
-    $('#carousel-arrow-left').on('click', function() {
-      console.log('click')
+  $('#carousel-arrow-right').on('click', function () {
+    $('.carousel').carousel('next');
+  });
 
-      instance.prev()
-    });
+  function autoplay() {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 4500);
+  }
 
-    $('#carousel-arrow-right').on('click', function() {
-      console.log('click')
-
-      instance.next()
-    });
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  // autoplay()
+});
