@@ -12,11 +12,11 @@ window.addEventListener("DOMContentLoaded", function () {
   function success() {
     form.reset();
     button.style = "display: none ";
-    status.innerHTML = "Thanks!";
+    status.innerHTML = "¡Gracias!";
   }
 
   function error() {
-    status.innerHTML = "Oops! There was a problem.";
+    status.innerHTML = "¡Oops! Ocurrio un problema al enviar.";
   }
 
   // handle the form submission event
