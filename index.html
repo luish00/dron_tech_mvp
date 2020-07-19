@@ -11,6 +11,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="shortcut icon" type="image/ico" href="./assets/favicon.ico">
+  <link href="libs/leaflet/leaflet.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -355,6 +356,10 @@
     </form>
   </div>
 
+  <div class="row">
+    <div class="col s12 m12 openmap" id="map"></div>
+  </div>
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
@@ -382,10 +387,12 @@
   </footer>
 
   <!--  Scripts-->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap" async defer></script> -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/email.js"></script>
+  <script src="libs/leaflet/leaflet.js"></script>
 </body>
 
 </html>
