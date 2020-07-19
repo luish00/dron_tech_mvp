@@ -140,3 +140,25 @@ p {
 .openmap {
   height: 500px;
 }
+
+/* media queries */
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 36px;
+  }
+ 
+  h2 {
+    font-size: 30px;
+  }
+
+ .brand-logo img {
+  width: 250px;
+  margin-left: 16px;
+  margin-bottom: 5px;
+ }
+
+ .carousel-arrow-container {
+  width: 48px;
+ }
+
+}
