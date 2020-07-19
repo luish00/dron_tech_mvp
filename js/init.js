@@ -20,12 +20,10 @@ $(document).ready(function () {
   });
 
   // play caroucel comment
-  function autoplay() {
+  function carouelAutoplay() {
     $('.carousel').carousel('next');
-    setTimeout(autoplay, 4500);
+    setTimeout(carouelAutoplay, 4500);
   }
-
-  // autoplay()
 
   // docs https://leafletjs.com/reference-1.6.0.html
   function initMap() {
@@ -49,5 +47,6 @@ $(document).ready(function () {
       ).openPopup();
   }
 
+  carouelAutoplay();
   initMap();
 });
