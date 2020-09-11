@@ -141,6 +141,14 @@ p {
   height: 500px;
 }
 
+.gone {
+  display: none !important;
+}
+
+#lastQutoe span {
+  font-size: 34px;
+}
+
 /* media queries */
 @media only screen and (max-width: 576px) {
   h1 {
@@ -160,5 +168,4 @@ p {
  .carousel-arrow-container {
   width: 48px;
  }
-
 }

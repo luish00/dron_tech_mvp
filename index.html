@@ -17,7 +17,7 @@
     permitiéndonos ir desde campos de maíz, hasta granjas de camarones con
     la mejor calidad a nivel mundial.">
   <meta property="og:title" content="Drontech">
-  
+
   <title>Drontech</title>
 
   <!-- CSS  -->
@@ -37,6 +37,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Inicio</a></li>
         <li><a href="#tegnologias">Nuestra Tegnología</a></li>
+        <li><a href="#cotizador">Cotizador</a></li>
         <li><a href="#testimmonios">Testimonios</a></li>
         <!-- <li><a href="#">Reproductor de video</a></li> -->
         <li><a href="#contacto">Contacto</a></li>
@@ -45,6 +46,7 @@
       <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Inicio</a></li>
         <li><a href="#tegnologias">Nuestra Tegnología</a></li>
+        <li><a href="#cotizador">Cotizador</a></li>
         <li><a href="#testimmonios">Testimonios</a></li>
         <!-- <li><a href="#">Reproductor de video</a></li> -->
         <li><a href="#contacto">Contacto</a></li>
@@ -281,6 +283,73 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="row">
+      <h3 id="cotizador" class="col s12 teal-text text-darken-2 center">
+        Cotizador
+      </h3>
+
+      <div id="quoteProgress" class="progress gone">
+        <div class="indeterminate"></div>
+      </div>
+
+      <div class="col s12 m12 xl6">
+        <form id="quoteForm" class="row">
+          <div class="input-field col s6 m6">
+            <input id="name" placeholder="Opcional" type="text" class="validate">
+            <label for="name">Nombre</label>
+          </div>
+
+          <div class="input-field col s6 m6">
+            <input id="phone" maxlength="10" placeholder="Opcional" type="tel" class="validate">
+            <label for="phone">Télefono</label>
+          </div>
+
+          <div class="input-field col s12 m6">
+            <select id="slCity">
+              <option value="" disabled>Selecciona...</option>
+              <option value="1" selected>Sinaloa</option>
+              <option value="2">Sonra</option>
+            </select>
+            <label>Estado</label>
+          </div>
+
+          <div class="input-field col s12 m6">
+            <select id="slTown" required>
+              <option value="" disabled selected>Selecciona...</option>
+            </select>
+            <label>Municipio</label>
+          </div>
+
+          <div class="input-field col s12 m6">
+            <input id="hectareas" maxlength="4" required type="text" name="hectareas" class="validate">
+            <label for="hectareas">Hectareas</label>
+          </div>
+
+          <div class="input-field col s12 m6">
+            <select id="slSector">
+              <option value="" disabled>Selecciona</option>
+              <option value="1" selected>Sector Agrícola</option>
+              <option value="2">Sector Acuícola</option>
+              <option value="3">Sector Ganadero</option>
+            </select>
+            <label>Tipo de sector</label>
+          </div>
+
+          <button id="btnGetQuote" type="submit" class="waves-effect waves-light btn right">
+            Cotizar
+          </button>
+        </form>
+      </div>
+      
+      <div class="col s12 m12 xl6">
+        <h4 class="teal-text text-darken-2 center">Ultima cotización</h4>
+
+        <div id="lastQutoe"></div>
+      </div>
+    </div>
+  </div>
+
   <h3 id="testimmonios" class="col s12 teal-text text-darken-2 center">
     Testimonios
   </h3>
@@ -388,8 +457,7 @@
           <h5 class="white-text">Contactos</h5>
           <ul>
             <li><a class="white-text" href="tel:8180945513">8180945513</a></li>
-            <li><a class="white-text"
-                href="mailto:contacto@drontech.org">contacto@drontech.org</a></li>
+            <li><a class="white-text" href="mailto:contacto@drontech.org">contacto@drontech.org</a></li>
           </ul>
         </div>
       </div>
